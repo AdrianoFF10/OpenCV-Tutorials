@@ -50,6 +50,7 @@ while cap.isOpened():
     print("Can't receive frame (stream end?). Exiting ...")
     break
  
+ 
  gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
  cv.imshow('frame', gray)
 
