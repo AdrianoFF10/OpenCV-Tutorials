@@ -58,7 +58,7 @@ cv.putText(img,'OpenCV', (20,500), font, 4, (255,255,255), 2, cv.LINE_AA)
 cv.imshow('OpenCV Logo', img)
 
 if cv.waitKey(0) == ord('s'):
-    cv.write('OpenCV_Logo.png',img)
+    cv.imwrite('OpenCV_Logo.png',img)
 
 
 
