@@ -36,6 +36,8 @@ cv.destroyAllWindows()
 
 # Playing Video from file
 
+'''
+
 import numpy as np
 import cv2 as cv
 
@@ -47,7 +49,7 @@ while cap.isOpened():
  # if frame is read correctly ret is True
 
  if not ret:
-    print("Can't receive frame (stream end?). Exiting ...")
+    print("Can't receive frame. Stream ending. Exiting ...")
     break
  
  
@@ -60,16 +62,17 @@ while cap.isOpened():
 cap.release()
 cv.destroyAllWindows()
 
+'''
 
 #----------------------------------------------------------------------------------------
 
 # Saving a video
 
 
-# import cv2 as cv
+import cv2 as cv
 import numpy as np
-""""
-cap = cv.VideoCapture(0)
+
+cap = cv.VideoCapture('/home/adrianoff10/opencv/samples/data/Megamind.avi')
 
 fourcc = cv.VideoWriter_fourcc(*'XVID') #definir a codificação do video e criar o objeto video writer
 out = cv.VideoWriter('output.avi', fourcc, 20.0, (640,480)) #Definições do que sai 
@@ -83,11 +86,11 @@ while cap.isOpened():
         break
     frame = cv.flip(frame,0)  # reescrever os frames na direção vertical
 
-    out.write(frame)   #guardar os frames de novo
+    out.write(frame)   # guardar os frames de novo
 
     cv.imshow('Video', frame)
 
-    k = cv.waitKey(0)
+    k = cv.waitKey(25)
 
     if k == ord('q'):
         break
@@ -96,7 +99,7 @@ cap.release()
 out.release()
 cv.destroyAllWindows()
 
-"""
+
 
 
 
