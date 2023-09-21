@@ -12,7 +12,7 @@ print(events)
 import numpy as np
 import cv2 as cv
 
-def draw_circle(event,x,y,flags,param):    #definir uma funcao
+def draw_circle(event,x,y, flags, param):    #definir uma funcao
     if event == cv.EVENT_LBUTTONDBLCLK:
         cv.circle(img, (x,y),50, (0,255,0), -1)
 
