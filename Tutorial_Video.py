@@ -75,7 +75,7 @@ import numpy as np
 cap = cv.VideoCapture('/home/adrianoff10/opencv/samples/data/Megamind.avi')
 
 fourcc = cv.VideoWriter_fourcc(*'XVID') #definir a codificação do video e criar o objeto video writer
-out = cv.VideoWriter('output.avi', fourcc, 20.0, (640,480)) #Definições do que sai 
+out = cv.VideoWriter('output.avi', fourcc, 20.0, (640,480)) #Definições do que vai ser guardado 
 #(video, codificacao, fps, dimensao)
 
 while cap.isOpened():
