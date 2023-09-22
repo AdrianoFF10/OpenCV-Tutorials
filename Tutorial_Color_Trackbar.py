@@ -96,6 +96,9 @@ while True:
     k = cv.waitKey(1) & 0xFF
     if k == 27: 
         break
+    
+    elif k == ord('s'):
+        cv.imwrite('Desenho.png', draw)
 
     r = cv.getTrackbarPos('R', 'image')
     g = cv.getTrackbarPos('G', 'image')
