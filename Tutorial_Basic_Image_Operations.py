@@ -16,7 +16,7 @@ assert img is not None, "file could not be read, check with os.path.exists()"   
 
 #print(blue)
 
-#rint(img.item(10,10,2))    #outra maneira de retirar as propriedades dos pixeis
+#print(img.item(10,10,2))    #outra maneira de retirar as propriedades dos pixeis
 
 #img.itemset((10,10,2),100)  #alterar as propriedades dos pixeis
 #print(img.item(10,10,2))
