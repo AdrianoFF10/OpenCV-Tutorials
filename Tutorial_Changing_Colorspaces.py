@@ -37,6 +37,9 @@ while (1):
     mask = mask_blue | mask_green | mask_red
 
     res = cv.bitwise_and(frame, frame, mask = mask)
+    #res_green = cv.bitwise_and(frame, frame, mask = mask_green)
+    #res_blue = cv.bitwise_and(frame, frame, mask = mask_blue)
+    #res_red = cv.bitwise_and(frame, frame, mask = mask_red)
 
     cv.imshow('frame', frame)
     cv.imshow('mask', mask)
